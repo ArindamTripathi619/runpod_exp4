@@ -495,18 +495,6 @@ def run_experiment_4(n_trials: int, db: Database, config: Config) -> Dict[str, A
     logger.info("="*80)
     
     return results
-            benign_prompts=benign_prompts,
-            n_trials=n_trials,
-            experiment_id=f"{experiment_id}_{config_name}",
-            db=db,
-            config=config,
-        )
-    
-    logger.info("\n" + "="*80)
-    logger.info("EXPERIMENT 4 COMPLETE")
-    logger.info("="*80)
-    
-    return results
 
 
 def estimate_time(num_attacks, num_benign, num_configs, n_trials):
